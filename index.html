@@ -1,0 +1,109 @@
+<!DOCTYPE htm>
+<html lang="en-us">
+
+    <!--
+Aurthor: Maiyer Thao
+Date: 1-10-18
+Start Time: 6:16 pm
+End Time:
+Update: creating html and styling css
+-->
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="assets/css/lux-theme.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>Home</title>
+    </head>
+    <html>
+
+    <body>
+        <div class="jumbotron">
+            <!-- header -->
+            <div class="header">
+                <h1 class="text-center">Rail Away</h1>
+                <!-- <img src="assets/images/train-logo2.png" class="img-fluid"> -->
+                <hr>
+            </div>
+
+            <div class="row" id="content">
+                <!-- form -->
+                <div class="card text-white bg-info mb-3 col-md-3">
+                    <h4 class="card-header">Add Train</h4>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Train Name</label>
+                                <input type="text" class="form-control" id="trainName" placeholder="Xpress">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Destination</label>
+                                <input type="text" class="form-control" id="destination" placeholder="Minneapolis, MN">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">First Train Time (HH: mm-military time)</label>
+                                <input type="text" class="form-control" id="firstTrainTime" placeholder="1200">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Frequency (minutes)</label>
+                                <input type="text" class="form-control" id="frequency" placeholder="15">
+                            </div>
+                            <button type="button" class="btn btn-dark">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- train data -->
+                <div class="col-md-9">
+                    <h4 class="card-header">Current Train Schedule</h4>
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">Train Name</th>
+                                <th scope="col">Destination</th>
+                                <th scope="col">Freqiency</th>
+                                <th scope="col">Next Arrival</th>
+                                <th scope="col">Minutes Away</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Xpress</th>
+                                <td>Minneapolis, MN</td>
+                                <td>1200</td>
+                                <td>15</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+
+                </div>
+            </div>
+
+            <footer>
+                <hr>
+                <p class="text-center"> Maiyer Thao &copy; 2018 </p>
+            </footer>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/locale/af.js"></script>
+        <script src="assets/javascript/logic.js"></script>
+    </body>
+
+    </html>
