@@ -31,7 +31,7 @@
   		// Creates local "temporary" object for holding train data
   		// Will push this to firebase
   		var newTrain = {
-  			name: trainName,
+  			trainName: trainName,
   			destination: destination,
   			trainTime: trainTime,
   			frequency: frequency,
@@ -56,7 +56,6 @@
 
   		// assign firebase variables to snapshots.
   		var firebaseName = childSnapshot.val().name;
-  		var firebaseLine = childSnapshot.val().line;
   		var firebaseDestination = childSnapshot.val().destination;
   		var firebaseTrainTimeInput = childSnapshot.val().trainTime;
   		var firebaseFrequency = childSnapshot.val().frequency;
