@@ -15,6 +15,7 @@ Update: creating html and styling css
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="assets/css/lux-theme.css">
         <link rel="stylesheet" href="assets/css/style.css">
+        <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
         <title>Home</title>
     </head>
     <html>
@@ -23,10 +24,13 @@ Update: creating html and styling css
         <div class="jumbotron">
             <!-- header -->
             <div class="header">
-                <h1 class="text-center">Rail Away</h1>
-                <!-- <img src="assets/images/train-logo2.png" class="img-fluid"> -->
+                <h1 class="text-center">Training Days</h1>
+                <div class="text-center">
+                    <img src="assets/images/train-logo2.png" class="img-fluid">
+                </div>
                 <hr>
             </div>
+
 
             <div class="row" id="content">
                 <!-- form -->
@@ -50,7 +54,7 @@ Update: creating html and styling css
                                 <label for="formGroupExampleInput">Frequency (minutes)</label>
                                 <input type="text" class="form-control" id="frequency" placeholder="15">
                             </div>
-                            <button type="button" class="btn btn-dark">Submit</button>
+                            <button type="button" class="btn btn-dark" id="submit">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -76,16 +80,18 @@ Update: creating html and styling css
                                 <td>15</td>
                             </tr>
                             <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
+                                <th scope="row">Starbuck</th>
+                                <td>Seattle, WA</td>
+                                <td>6000</td>
+                                <td>15</td>
+                                <td>15</td>
                             </tr>
                             <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
+                                <th scope="row">Snow Away</th>
+                                <td>Juneau, AK</td>
+                                <td>2000</td>
+                                <td>25</td>
+                                <td>25</td>
                             </tr>
                         </tbody>
                     </table>
