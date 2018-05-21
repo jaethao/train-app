@@ -1,40 +1,33 @@
 <!DOCTYPE htm>
 <html lang="en-us">
-
-    <!--
-Aurthor: Maiyer Thao
-Date: 1-16-18
-Start Time: 3:16 pm
-End Time:
-Update: creating html and styling css
--->
-
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="assets/css/lux-theme.css">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- Css styling -->
         <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Firebase -->
         <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
         <title>Home</title>
     </head>
     <html>
 
     <body>
-        <div class="jumbotron">
-            <!-- header -->
-            <div class="header">
-                <h1 class="text-center">Training Days</h1>
-                <div class="text-center">
-                    <img src="assets/images/train-logo2.png" class="img-fluid">
-                </div>
-                <hr>
-            </div>
+      <!-- landing -->
+      <div id="landing">
+          <h1 class="text-center pad">Training Day</h1>
+          <br>
+          <br>
+          <div class="text-center"><button type="button" class="btn btn-info btn-lg">Add a Train</button></div>
 
+      </div>
 
+      <!-- content -->
+        <div class="container-fluid">
             <div class="row" id="content">
                 <!-- form -->
-                <div class="card text-white bg-info mb-3 col-md-3">
+                <!-- <div class="card text-white bg-info">
                     <h4 class="card-header">Add Train</h4>
                     <div class="card-body">
                         <form>
@@ -57,9 +50,9 @@ Update: creating html and styling css
                             <button type="button" class="btn btn-dark" id="submit">Submit</button>
                         </form>
                     </div>
-                </div>
+                </div> -->
                 <!-- train data -->
-                <div class="col-md-9">
+                <div class="col-lg-12">
                     <h4 class="card-header">Current Train Schedule</h4>
                     <table class="table">
                         <thead class="thead-dark">
@@ -95,20 +88,28 @@ Update: creating html and styling css
                             </tr>
                         </tbody>
                     </table>
-
-
-
+                    <hr>
+                    <br>
+                    <br>
+                    <h4>Add your train schedule!</h4>
+                    <button></button>
                 </div>
-            </div>
+                </div>
 
             <footer>
                 <hr>
                 <p class="text-center"> Maiyer Thao &copy; 2018 </p>
             </footer>
         </div>
-
+        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- JQuery -->
         <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+        <!-- Moment JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/locale/af.js"></script>
+        <!-- Logic -->
         <script src="assets/javascript/logic.js"></script>
     </body>
 
