@@ -7,8 +7,16 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <!-- Css styling -->
         <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- jQuery -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- Moment JS -->
+        <script src="assets/javascript/moment.min.js"></script>
         <!-- Firebase -->
-        <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
         <title>Home</title>
     </head>
     <html>
@@ -59,7 +67,7 @@
                 </div>
                   <div class="col-lg-8">
                     <h4 class="card-header">Current Train Schedule</h4>
-                    <table class="table">
+                    <table class="table" id="train-table">
                         <thead class="thead-dark">
                             <tr>
                                 <th scope="col">Train Name</th>
@@ -70,27 +78,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">Xpress</th>
-                                <td>Minneapolis, MN</td>
-                                <td>1200</td>
-                                <td>15</td>
-                                <td>15</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Starbuck</th>
-                                <td>Seattle, WA</td>
-                                <td>6000</td>
-                                <td>15</td>
-                                <td>15</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Snow Away</th>
-                                <td>Juneau, AK</td>
-                                <td>2000</td>
-                                <td>25</td>
-                                <td>25</td>
-                            </tr>
+                          <!-- trains will go here -->
                         </tbody>
                     </table>
                     <hr>
@@ -105,16 +93,8 @@
                 <p class="text-center"> Maiyer Thao &copy; 2018 </p>
             </footer>
         </div>
-        <!-- Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <!-- JQuery -->
-        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
-        <!-- Moment JS -->
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/locale/af.js"></script> -->
         <!-- Logic -->
-        <!-- <script src="assets/javascript/logic.js"></script> -->
+        <script src="assets/javascript/logic.js"></script>
     </body>
 
     </html>
