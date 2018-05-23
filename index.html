@@ -21,8 +21,6 @@
           <h1 class="header">Training Day</h1>
           <br>
             <h4 class="whiteShadow">Your destination awaits you!</h4>
-            <br>
-            <a href="#addTrain"><button type="button" class="btn btn-info btn-lg whiteShadow">Add a destination</button></a>
           </div>
           </div>
       </div>
@@ -30,8 +28,36 @@
         <div class="container-fluid">
           <!-- train data -->
             <div class="row" id="content">
-                <div class="col-lg-12">
-                  <br>
+                <div class="col-lg-4">
+                  <!-- form -->
+                  <div id="form">
+                  <div class="card text-white bg-info">
+                      <h4 class="card-header">Add a train</h4>
+                      <div class="card-body">
+                          <form>
+                              <div class="form-group">
+                                  <label for="formGroupExampleInput">Train Name</label>
+                                  <input type="text" class="form-control" id="trainName" placeholder="Xpress">
+                              </div>
+                              <div class="form-group">
+                                  <label for="formGroupExampleInput">Destination</label>
+                                  <input type="text" class="form-control" id="destination" placeholder="Minneapolis, MN">
+                              </div>
+                              <div class="form-group">
+                                  <label for="formGroupExampleInput">First Train Time (HH: mm-military time)</label>
+                                  <input type="text" class="form-control" id="firstTrainTime" placeholder="1200">
+                              </div>
+                              <div class="form-group">
+                                  <label for="formGroupExampleInput">Frequency (minutes)</label>
+                                  <input type="text" class="form-control" id="frequency" placeholder="15">
+                              </div>
+                              <span><button type="button" class="btn btn-dark" id="submit">Submit</button></span>
+                          </form>
+                      </div>
+                  </div>
+                  </div>
+                </div>
+                  <div class="col-lg-8">
                     <h4 class="card-header">Current Train Schedule</h4>
                     <table class="table">
                         <thead class="thead-dark">
@@ -72,36 +98,6 @@
                     <br>
                 </div>
                 </div>
-                <h4 id="addTrain">Add a train to the schedule!</h4>
-                <br>
-                <!-- form -->
-                <div id="form">
-                <div class="card text-white bg-info">
-                    <h4 class="card-header">Add Train</h4>
-                    <div class="card-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="formGroupExampleInput">Train Name</label>
-                                <input type="text" class="form-control" id="trainName" placeholder="Xpress">
-                            </div>
-                            <div class="form-group">
-                                <label for="formGroupExampleInput">Destination</label>
-                                <input type="text" class="form-control" id="destination" placeholder="Minneapolis, MN">
-                            </div>
-                            <div class="form-group">
-                                <label for="formGroupExampleInput">First Train Time (HH: mm-military time)</label>
-                                <input type="text" class="form-control" id="firstTrainTime" placeholder="1200">
-                            </div>
-                            <div class="form-group">
-                                <label for="formGroupExampleInput">Frequency (minutes)</label>
-                                <input type="text" class="form-control" id="frequency" placeholder="15">
-                            </div>
-                            <span><button type="button" class="btn btn-dark" id="submit">Submit</button></span>
-                        </form>
-                    </div>
-                </div>
-                </div>
-
                 <br>
                 <br>
             <footer>

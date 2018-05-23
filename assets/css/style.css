@@ -36,3 +36,8 @@
   padding-top: 100px;
   height: 600px;
 }
+
+tbody tr:hover {
+  background-color: #0ca1b2;
+  color: white;
+}
